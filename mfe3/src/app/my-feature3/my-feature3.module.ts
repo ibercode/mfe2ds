@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MyComponent } from './my-component/my-component.component';
 import { RouterModule, Routes } from '@angular/router';
+import '@salut/design-system-salut';
 
 const routes: Routes = [
   {
@@ -16,5 +17,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes), 
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class MyFeature3Module {}
