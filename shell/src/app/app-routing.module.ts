@@ -14,6 +14,17 @@ const routes: Routes = [
         .then((m) => m.MyFeatureModule)
         .catch((err) => console.error('Error lazy loading mfe1 app', err)),
   },
+  {
+    path: 'mfe3',
+    loadChildren: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:4203/remoteEntry.js',
+        exposedModule: './my-feature3-module',
+      })
+        .then((m) => m.MyFeature3Module)
+        .catch((err) => console.error('Error lazy loading mfe3 app', err)),
+  },
 ];
 
 @NgModule({
