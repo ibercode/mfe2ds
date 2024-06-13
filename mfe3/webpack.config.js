@@ -10,10 +10,9 @@ module.exports = withModuleFederationPlugin({
     "./my-feature3-module": "./src/app/my-feature3/my-feature3.module.ts",
   },
   shared: {
-    ...shareAll({
-      singleton: true,
-      strictVersion: true,
-      requiredVersion: "auto",
-    }),
+    "@angular/core": { singleton: true, strictVersion: true, requiredVersion: '>=1.1.0 <17.0.0' },
+    "@angular/common": { singleton: true, strictVersion: true, requiredVersion:  '>=1.1.0 <17.0.0' },
+    "@angular/router": { singleton: true, strictVersion: true, requiredVersion:  '>=1.1.0 <17.0.0' }, 
+    "@salut/design-system-salut": { singleton: true, strictVersion: true, requiredVersion:  '>=1.4.1 <=1.4.1' }, 
   },
 });
