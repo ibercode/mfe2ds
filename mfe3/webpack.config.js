@@ -13,6 +13,6 @@ module.exports = withModuleFederationPlugin({
     "@angular/core": { singleton: true, strictVersion: true, requiredVersion: '>=1.1.0 <17.0.0' },
     "@angular/common": { singleton: true, strictVersion: true, requiredVersion:  '>=1.1.0 <17.0.0' },
     "@angular/router": { singleton: true, strictVersion: true, requiredVersion:  '>=1.1.0 <17.0.0' }, 
-    "@salut/design-system-salut": { singleton: true, strictVersion: true, requiredVersion:  '>=1.4.1 <=1.4.1' }, 
+    "@salut/design-system-salut": { singleton: false, strictVersion: true, requiredVersion:  '>=1.4.1 <=1.4.1' }, 
   },
 });

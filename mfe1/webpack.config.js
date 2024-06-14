@@ -13,7 +13,7 @@ module.exports = withModuleFederationPlugin({
     "@angular/core": { singleton: true, strictVersion: true, requiredVersion: '>=1.1.0 <17.0.0' },
     "@angular/common": { singleton: true, strictVersion: true, requiredVersion:  '>=1.1.0 <17.0.0' },
     "@angular/router": { singleton: true, strictVersion: true, requiredVersion:  '>=1.1.0 <17.0.0' }, 
-    "@salut/design-system-salut": { singleton: true, strictVersion: true, requiredVersion:  '>=1.5.2 <=1.5.2' }, 
+    "@salut/design-system-salut": { singleton: false, strictVersion: true, requiredVersion:  '>=1.5.2 <=1.5.2' }, 
    //"@ibm/watsonx": { singleton: true, strictVersion: true, requiredVersion:  '>=1.9.2 <=1.5.2' },
   },
 });
